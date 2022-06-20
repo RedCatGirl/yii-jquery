@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace RedCatGirl\Jquery;
 
+use Psr\Container\ContainerInterface;
 use Yiisoft\Assets\AssetBundle;
 
 /**
@@ -22,6 +23,6 @@ final class JqueryAsset extends AssetBundle
     public ?string $sourcePath = '@npm/jquery/dist';
 
     public array $js = [
-        'jquery.min.js',
+        'jquery.js'
     ];
 }
